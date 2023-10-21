@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #00dbde;
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+  height: 100vh;
+  padding-top:10px;
+}
+.div {
+  background-image: url(./images/Img_1.png);
+  width: 80%;
+  height: 90%;
+  background-size: cover;
+  position: relative;
+  margin: auto;
+  background-position: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  
+}
+.ground{
+    background-image: url(./images/Img_02.png);
+    height:150px;
+    width:150000200%;
+    /* background-size: cover;
+    background-position: center; */
+    position:absolute;
+    bottom:0;
+    left:0;
+    animation: left-move 8s linear  infinite;
+}
+.text{
+    color:white;
+width:200px;
+height:75px;
+position:absolute;
+bottom:60px;
+left:50%;
+background-color:darkcyan;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 25px;
+border-radius: 10px;
+text-align: center;
+z-index:2;
+animation: parlak .8s linear alternate infinite
+/* animation:left-move 8s linear  infinite; ; */
+}
+.car{
+    position:absolute;
+    bottom:52px;
+    left:23%;
+    z-index: 2;
+    animation: hop-up .8s linear alternate infinite;
+}
+@keyframes left-move {
+    100%{
+        transform: translate(-2000px);
+    }
+    
+}
+@keyframes hop-up {
+    0%{
+        transform: translateY(-2px);
+
+    }
+    50%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(2px);
+    }
+    }
+
+    @keyframes parlak {
+        0%{
+            transform:scale(1.2);
+        }
+        100%{
+            transform:scale(1)
+        }
+    }
