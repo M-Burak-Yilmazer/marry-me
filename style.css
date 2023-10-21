@@ -48,8 +48,17 @@ font-size: 25px;
 border-radius: 10px;
 text-align: center;
 z-index:2;
-animation: parlak .8s linear alternate infinite
+animation: parlak .5s linear alternate  infinite
 /* animation:left-move 8s linear  infinite; ; */
+}
+.balon img
+{
+    width:100px;
+    position:absolute;
+bottom:20%;
+left:53%;
+animation: up-mode 3s ease-in-out infinite;
+
 }
 .car{
     position:absolute;
@@ -85,3 +94,12 @@ animation: parlak .8s linear alternate infinite
             transform:scale(1)
         }
     }
+    @keyframes up-mode {
+        0%{
+            transfom:translate(0);
+        }
+    100%{
+        transform: translateY(-2000px);
+    }
+    
+}
